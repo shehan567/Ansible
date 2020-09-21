@@ -1,5 +1,5 @@
  -name: Sample Play
- hosts: all
- tasks:
-   -debug:
-     msg: Hello from INteliJ
+  hosts: all
+  tasks:
+    -debug:
+       msg: Hello from INteliJ
