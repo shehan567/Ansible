@@ -4,5 +4,3 @@
     - debug:
         msg: Hello & Ping
 
-    - ping:
-        hosts: node1
