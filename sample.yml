@@ -1,0 +1,6 @@
+-name: Sample Play
+ hosts: All
+ tasks:
+   -debug:
+      msg: Hello from InteliJ
+
