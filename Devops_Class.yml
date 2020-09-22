@@ -1,9 +1,9 @@
-- name: DevOps Class
-   hosts: node2
-   tasks:
-     - name: TRainer Name
-       debug:
-         msg: "Raghu"
-     - name: Cource Name
-         debug:
-           msg: "DevOps Training"
+- name : DevOps Class
+  hosts : node2
+  tasks :
+   - name : TRainer Name
+     debug :
+       msg : "Raghu"
+   - name : Cource Name
+     debug :
+       msg : "DevOps Training"
