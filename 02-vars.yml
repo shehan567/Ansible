@@ -26,6 +26,7 @@
 
 - name: Ping from yml
   hosts: all
-  tasks:
-    ping
+  tasks: ping
+
+
 
