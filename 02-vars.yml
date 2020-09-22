@@ -24,9 +24,12 @@
       debug:
         msg: URL = {{URL}}
 
-- name: Ping from yml
+- name: Declare Variable from Inventory file
   hosts: all
-  tasks: ping
+  tasks:
+    - name: Print Variable from inventory
+      debug:
+        msg: URL = {{URL}}
 
 
 
