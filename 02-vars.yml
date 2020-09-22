@@ -24,4 +24,8 @@
       debug:
         msg: URL = {{URL}}
 
+- name: Adding Ping as well
+  hosts: all
+  tasks:
+    ping: hosts
 
