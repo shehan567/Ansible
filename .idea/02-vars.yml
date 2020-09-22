@@ -1,0 +1,15 @@
+- name: Variables on play level
+  hosts: all
+  vars:
+    URL: play.example.com
+  tasks:
+    - name: Print Variable
+      debug:
+        msg: URL = {{URL}}
+    ## In Ansible we access variables in two flower braces
+
+    - name: Print Variable from Task Declaration
+      vars:
+        URL: task.google.com
+      debug: URL = {{URL}}
+    ## NOTE: Task level variables overides the play level variables
