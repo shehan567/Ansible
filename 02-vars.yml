@@ -42,22 +42,35 @@
       debug:
         msg: URL = {{URL}}
 
-- name: Variable precedence
+- name: Register Variables
   hosts: all
-  vars:
-    URL: play.example.com
-    vars_files:
-      - vars01.yml
-  vars_prompt:
-    - name: URL
-      prompt: Enter URL
-      private: no
   tasks:
-    - name: Print Variable
+    - name: Find files
+      find:
+        paths: /boot
+      register: OUTPUT
+
+    - name: Print OUTPUT
       debug:
-        msg: URL = {{URL}}
-      vars:
-        URL: task.example.com
+        msg: OUTPUT = {{OUTPUT}}
+
+
+#- name: Variable precedence
+#  hosts: all
+#  vars:
+#    URL: play.example.com
+#    vars_files:
+#      - vars01.yml
+#  vars_prompt:
+#    - name: URL
+#      prompt: Enter URL
+#      private: no
+#  tasks:
+#    - name: Print Variable
+#      debug:
+#        msg: URL = {{URL}}
+#      vars:
+#        URL: task.example.com
 
 
 
