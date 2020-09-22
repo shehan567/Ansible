@@ -24,8 +24,8 @@
       debug:
         msg: URL = {{URL}}
 
-- name: Adding Ping as well
+- name: Ping from yml
   hosts: all
   tasks:
-    ping: hosts
+    ping
 
