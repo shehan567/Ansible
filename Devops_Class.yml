@@ -1,5 +1,5 @@
 - name: DevOps Class
-   hosts: all
+   hosts: node2
    tasks:
      - name: TRainer Name
        debug:
