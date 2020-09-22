@@ -1,5 +1,5 @@
 - name: Demo on data types
-  hosts: node1
+  hosts: node2
   vars:
     NUMBER: 10
     CHARACTERS: abc
