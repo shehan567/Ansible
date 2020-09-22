@@ -72,6 +72,16 @@
 #      vars:
 #        URL: task.example.com
 
+## Observations,
+## vars, vars_files, inventory, tasks
+## Lower the number higher the priority
+# 0. Command line arguments given as -e VAR=DATA
+# 1. tasks
+#### Roles variables take precedence when you use roles.
+# 2. vars_files
+# 3. vars_prompt
+# 4. vars
+# 5. Inventory
 
 
 
