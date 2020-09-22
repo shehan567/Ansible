@@ -14,3 +14,14 @@
       debug:
         msg: URL = {{URL}}
     ## NOTE: Task level variables overides the play level variables
+
+- name: Declare Variable in a file and Access it
+  hosts: all
+  vars_files:
+    - vars01.yml
+  tasks:
+    - name: Print variable from files
+      debug:
+        msg: URL = {{URL}}
+
+
