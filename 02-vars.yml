@@ -31,5 +31,17 @@
       debug:
         msg: URL = {{URL}}
 
+- name: Prompt for the variable
+  hosts: all
+  vars_prompt:
+    - name: URL
+      prompt: Enter URL
+      private: no
+  tasks:
+    - name: Print from prompt
+      debug:
+        msg: URL = {{URL}}
+
+
 
 
