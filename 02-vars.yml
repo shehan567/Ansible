@@ -11,5 +11,6 @@
     - name: Print Variable from Task Declaration
       vars:
         URL: task.google.com
-      debug: URL = {{URL}}
+      debug:
+        msg: URL = {{URL}}
     ## NOTE: Task level variables overides the play level variables
