@@ -1,0 +1,9 @@
+- name: DevOps Class
+   hosts: all
+   tasks:
+     - name: TRainer Name
+       debug:
+         msg: "Raghu"
+     - name: Cource Name
+         debug:
+           msg: "DevOps Training"
